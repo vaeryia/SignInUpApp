@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1348FBC02A970C1D0057E8F6 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348FBBF2A970C1D0057E8F6 /* CreateAccountVC.swift */; };
 		13BD8D1A2A96A19200E75AEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD8D192A96A19200E75AEC /* AppDelegate.swift */; };
 		13BD8D1C2A96A19200E75AEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD8D1B2A96A19200E75AEC /* SceneDelegate.swift */; };
 		13BD8D212A96A19200E75AEC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BD8D1F2A96A19200E75AEC /* MainStoryboard.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1348FBBF2A970C1D0057E8F6 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		13BD8D162A96A19200E75AEC /* SignInUpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInUpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BD8D192A96A19200E75AEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13BD8D1B2A96A19200E75AEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				13BD8D342A96A89400E75AEC /* SignInVC.swift */,
+				1348FBBF2A970C1D0057E8F6 /* CreateAccountVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1348FBC02A970C1D0057E8F6 /* CreateAccountVC.swift in Sources */,
 				13BD8D1A2A96A19200E75AEC /* AppDelegate.swift in Sources */,
 				13BD8D1C2A96A19200E75AEC /* SceneDelegate.swift in Sources */,
 				13BD8D352A96A89400E75AEC /* SignInVC.swift in Sources */,

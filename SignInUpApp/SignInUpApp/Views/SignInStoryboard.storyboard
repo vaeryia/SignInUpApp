@@ -20,6 +20,9 @@
                                 <rect key="frame" x="191.66666666666663" y="127.99999999999999" width="176.33333333333337" height="34.333333333333329"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Create new account"/>
+                                <connections>
+                                    <segue destination="0zW-hm-SGF" kind="show" id="Nd3-Sf-Txw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbv-13-1h6">
                                 <rect key="frame" x="146.66666666666666" y="758.66666666666663" width="100" height="34.333333333333371"/>
@@ -52,7 +55,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDi-Xa-8qM">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error with Email or password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOV-1U-Roe">
                                                         <rect key="frame" x="0.0" y="50.000000000000057" width="343" height="20.333333333333329"/>
@@ -90,6 +93,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="982.44274809160299" y="3.5211267605633805"/>
+        </scene>
+        <!--SignUpStoryboard-->
+        <scene sceneID="Wv5-lB-wRE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUpStoryboard" id="0zW-hm-SGF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PqS-NP-yvz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Llw-ex-0Ie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1576" y="-203"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vFZ-F0-YrE">
