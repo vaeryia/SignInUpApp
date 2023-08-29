@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133F8EA22A9DB75B0023D030 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F8EA12A9DB75B0023D030 /* UserModel.swift */; };
 		1382CABC2A9D37A400512056 /* VerificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1382CABB2A9D37A400512056 /* VerificationService.swift */; };
 		13993FDE2A9D2DA700E1D7C0 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13993FDD2A9D2DA700E1D7C0 /* UIViewControllerExt.swift */; };
 		13A3745A2A9D23FF004C1FCB /* CreateAccViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A374592A9D23FF004C1FCB /* CreateAccViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		133F8EA12A9DB75B0023D030 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1382CABB2A9D37A400512056 /* VerificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationService.swift; sourceTree = "<group>"; };
 		13993FDD2A9D2DA700E1D7C0 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		13A374592A9D23FF004C1FCB /* CreateAccViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		133F8EA02A9DB7280023D030 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				133F8EA12A9DB75B0023D030 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1382CABA2A9D376200512056 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		13BD8D182A96A19200E75AEC /* SignInUpApp */ = {
 			isa = PBXGroup;
 			children = (
+				133F8EA02A9DB7280023D030 /* Models */,
 				13993FDC2A9D2D5200E1D7C0 /* Extentions */,
 				13BD8D332A96A87200E75AEC /* Controllers */,
 				13BD8D2D2A96A26700E75AEC /* Views */,
@@ -196,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13993FDE2A9D2DA700E1D7C0 /* UIViewControllerExt.swift in Sources */,
+				133F8EA22A9DB75B0023D030 /* UserModel.swift in Sources */,
 				13BD8D1A2A96A19200E75AEC /* AppDelegate.swift in Sources */,
 				1382CABC2A9D37A400512056 /* VerificationService.swift in Sources */,
 				13BD8D1C2A96A19200E75AEC /* SceneDelegate.swift in Sources */,

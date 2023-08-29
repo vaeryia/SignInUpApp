@@ -26,6 +26,9 @@
                                                 <rect key="frame" x="292.33333333333331" y="25.000000000000004" width="75.666666666666686" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Sign In"/>
+                                                <connections>
+                                                    <action selector="signInAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gF6-gE-XZk"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="fiH-sk-PB0">
                                                 <rect key="frame" x="25" y="49.999999999999972" width="343" height="502.33333333333326"/>
@@ -167,6 +170,9 @@
                                                                 <rect key="frame" x="0.0" y="234.66666666666669" width="343" height="34.333333333333314"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Continue"/>
+                                                                <connections>
+                                                                    <action selector="contAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ZbA-pW-OfP"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
