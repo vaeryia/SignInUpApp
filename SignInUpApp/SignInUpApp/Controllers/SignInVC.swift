@@ -13,9 +13,7 @@ class SignInVC: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var errorLbl: UILabel! {
-        didSet {
-            errorLbl.isHidden = true
-        }
+        didSet { errorLbl.isHidden = true }
     }
     @IBOutlet weak var signinBtn: UIButton!
     

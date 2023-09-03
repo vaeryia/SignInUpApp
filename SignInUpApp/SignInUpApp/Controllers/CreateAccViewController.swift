@@ -26,8 +26,8 @@ class CreateAccViewController: UIViewController {
 //scrollView
     @IBOutlet weak var scrollView: UIScrollView!
     
-    private var isValidEmail = false { didSet { updateContBtnState() }}
-    private var isConfPassword = false { didSet { updateContBtnState() }}
+    private var isValidEmail = false { didSet { updateContBtnState() } }
+    private var isConfPassword = false { didSet { updateContBtnState() } }
     private var passwordStrength: PasswordStrength = .veryWeak { didSet { updateContBtnState() }}
 
     
@@ -38,8 +38,9 @@ class CreateAccViewController: UIViewController {
         strongPasswordIndicatoesViews.forEach {
             view in view.alpha = 0.15
         }
-        startKeyboardObserver()
         hideKeyboardWhenTappedAround()
+        startKeyboardObserver()
+        
     }
     
     @IBAction func emailTFAction(_ sender: UITextField) {
