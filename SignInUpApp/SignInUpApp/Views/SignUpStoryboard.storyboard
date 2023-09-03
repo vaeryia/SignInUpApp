@@ -155,7 +155,7 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                         <connections>
-                                                                            <action selector="confPassTFAtion:" destination="Y6W-OH-hqX" eventType="editingChanged" id="2IG-eR-pk7"/>
+                                                                            <action selector="passTFAction:" destination="Y6W-OH-hqX" eventType="editingChanged" id="Ukf-Td-mFB"/>
                                                                         </connections>
                                                                     </textField>
                                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error: not confirmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wf-in-rc4">
@@ -224,11 +224,77 @@
                         <outletCollection property="strongPasswordIndicatoesViews" destination="XCU-Da-EHQ" collectionClass="NSMutableArray" id="HQu-TX-WXL"/>
                         <outletCollection property="strongPasswordIndicatoesViews" destination="pye-QA-SR5" collectionClass="NSMutableArray" id="CyR-TY-yeL"/>
                         <outletCollection property="strongPasswordIndicatoesViews" destination="OMU-Pv-Gy1" collectionClass="NSMutableArray" id="Up4-s3-IOc"/>
+                        <segue destination="dtX-80-XRW" kind="show" identifier="goToVerification" id="cje-Rc-ofQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="17.557251908396946" y="-2.1126760563380285"/>
+        </scene>
+        <!--VerificationsVC-->
+        <scene sceneID="h4N-A0-bOM">
+            <objects>
+                <viewController id="dtX-80-XRW" customClass="VerificationsVC" customModule="SignInUpApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w02-Ne-N3i">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="lDQ-jf-agx">
+                                <rect key="frame" x="25" y="304.33333333333331" width="343" height="233.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter secret code from your Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5e6-J5-LQE">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKc-4G-AC6">
+                                        <rect key="frame" x="0.0" y="105" width="343" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="AvY-0X-bTR">
+                                        <rect key="frame" x="0.0" y="170.33333333333337" width="343" height="63.333333333333343"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your secret code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tMe-XE-odd">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="codeTFAction:" destination="dtX-80-XRW" eventType="editingDidEndOnExit" id="8hU-IQ-qjE"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error: wrong code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNQ-xp-PQ5">
+                                                <rect key="frame" x="0.0" y="48.999999999999943" width="343" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qpw-rD-ZkQ"/>
+                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lDQ-jf-agx" firstAttribute="leading" secondItem="Qpw-rD-ZkQ" secondAttribute="leading" constant="25" id="3cw-G9-sdt"/>
+                            <constraint firstItem="Qpw-rD-ZkQ" firstAttribute="trailing" secondItem="lDQ-jf-agx" secondAttribute="trailing" constant="25" id="BE7-xP-Q0Y"/>
+                            <constraint firstItem="lDQ-jf-agx" firstAttribute="centerY" secondItem="Qpw-rD-ZkQ" secondAttribute="centerY" id="LPu-oQ-VAf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WkY-9V-s78"/>
+                    <connections>
+                        <outlet property="centerYConstraint" destination="LPu-oQ-VAf" id="mBW-ez-baw"/>
+                        <outlet property="codeTF" destination="tMe-XE-odd" id="POb-B5-V1O"/>
+                        <outlet property="errorCodeLbl" destination="eNQ-xp-PQ5" id="xiU-Uj-r2Q"/>
+                        <outlet property="infoLbl" destination="JKc-4G-AC6" id="FK7-Rm-hei"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VFq-ZE-EqG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803.81679389312978" y="19.718309859154932"/>
         </scene>
     </scenes>
     <resources>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		133F8EA22A9DB75B0023D030 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F8EA12A9DB75B0023D030 /* UserModel.swift */; };
+		13825B282AA4E117003000FF /* VerificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13825B272AA4E117003000FF /* VerificationsVC.swift */; };
 		1382CABC2A9D37A400512056 /* VerificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1382CABB2A9D37A400512056 /* VerificationService.swift */; };
 		13993FDE2A9D2DA700E1D7C0 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13993FDD2A9D2DA700E1D7C0 /* UIViewControllerExt.swift */; };
 		13A3745A2A9D23FF004C1FCB /* CreateAccViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A374592A9D23FF004C1FCB /* CreateAccViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		133F8EA12A9DB75B0023D030 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		13825B272AA4E117003000FF /* VerificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationsVC.swift; sourceTree = "<group>"; };
 		1382CABB2A9D37A400512056 /* VerificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationService.swift; sourceTree = "<group>"; };
 		13993FDD2A9D2DA700E1D7C0 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		13A374592A9D23FF004C1FCB /* CreateAccViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				13BD8D342A96A89400E75AEC /* SignInVC.swift */,
 				13A374592A9D23FF004C1FCB /* CreateAccViewController.swift */,
+				13825B272AA4E117003000FF /* VerificationsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				13BD8D1C2A96A19200E75AEC /* SceneDelegate.swift in Sources */,
 				13A3745A2A9D23FF004C1FCB /* CreateAccViewController.swift in Sources */,
 				13BD8D352A96A89400E75AEC /* SignInVC.swift in Sources */,
+				13825B282AA4E117003000FF /* VerificationsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

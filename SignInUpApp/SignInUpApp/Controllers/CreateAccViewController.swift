@@ -87,8 +87,7 @@ class CreateAccViewController: UIViewController {
         if let email = emailTF.text,
            let pass = passwordTF.text {
             let userModel = UserModel(name: nameTF.text, email: email, pass: pass)
-            //TODO: go to the next screen
-        }
+performSegue(withIdentifier: "goToVerification", sender: userModel)        }
     }
     
     private func setupStrognIndicatorsViews() {
@@ -129,14 +128,14 @@ class CreateAccViewController: UIViewController {
         scrollView.scrollIndicatorInsets = contentInsets
     }
     
-    /*
-     // MARK: - Navigation
+   //MARK: - Navigation
 
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+ 
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        guard let desinationVC = segue.destination as? VerificationsVC, let userModel = sender as? UserModel else { return }
+        desinationVC.userModel = userModel
     }
-    */
+   
 
 }
