@@ -31,6 +31,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sign In"/>
+                                <connections>
+                                    <action selector="signInAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xNO-dQ-Ga4"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="q3d-JY-cZG">
                                 <rect key="frame" x="25" y="376.33333333333331" width="343" height="168.33333333333331"/>
@@ -87,7 +90,6 @@
                         <outlet property="emailTF" destination="Sbs-Cw-o0U" id="AZ2-7K-lBA"/>
                         <outlet property="errorLbl" destination="SOV-1U-Roe" id="RAo-gT-5xb"/>
                         <outlet property="passwordTF" destination="sDi-Xa-8qM" id="BjW-77-YcI"/>
-                        <outlet property="signinBtn" destination="Pbv-13-1h6" id="ETb-ww-aat"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

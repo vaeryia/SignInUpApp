@@ -8,7 +8,7 @@
 import UIKit
 
 class SignInVC: UIViewController {
-
+    
     
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
@@ -24,23 +24,36 @@ class SignInVC: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
-      private func setupUI() {
-            signinBtn.isEnabled = false
-        }
-
-        // Do any additional setup after loading the view.
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        emailTF.text = ""
+        passwordTF.text = ""
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    @IBAction func signInAction() {
+        errorLbl.isHidden = true
+        guard let email = emailTF.text,
+        let password = passwordTF.text,
+        let userModel = UserDefaultsService.getUserModel(),
+        email == userModel.email,
+        password == userModel.pass
+        else {
+            errorLbl.isHidden = false
+            return }
+        
+        let storyboard = UIStoryboard(name: "MainStoryboard", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else { return }
+        navigationController?.pushViewController(vc, animated: true)
     }
-    */
+    
+    private func setupUI() {
+//        signinBtn.isEnabled = false
+    }
+    
+}
 
 extension SignInVC {
     

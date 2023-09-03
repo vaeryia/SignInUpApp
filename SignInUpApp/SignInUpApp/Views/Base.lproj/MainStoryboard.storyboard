@@ -43,7 +43,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="WOi-3p-PO1">
             <objects>
-                <tabBarController id="NTA-BQ-EqV" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NTA-BQ-EqV" customClass="TabBarController" customModule="SignInUpApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="COb-NG-edu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

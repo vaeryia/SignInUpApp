@@ -20,7 +20,8 @@ class WelcomeVC: UIViewController {
     }
     
     @IBAction func contAction() {
-    //TODO: save data
+        guard let userModel = userModel else { return }
+        UserDefaultsService.saveUserModel(userModel: userModel)
         navigationController?.popToRootViewController(animated: true)
     }
     
