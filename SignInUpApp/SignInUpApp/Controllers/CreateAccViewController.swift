@@ -80,14 +80,16 @@ class CreateAccViewController: UIViewController {
     }
     
     @IBAction func signInAction() {
-        navigationController?.popToRootViewController(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func contAction() {
         if let email = emailTF.text,
            let pass = passwordTF.text {
             let userModel = UserModel(name: nameTF.text, email: email, pass: pass)
-performSegue(withIdentifier: "goToVerification", sender: userModel)        }
+performSegue(withIdentifier: "goToVerification", sender: userModel)
+            
+        }
     }
     
     private func setupStrognIndicatorsViews() {

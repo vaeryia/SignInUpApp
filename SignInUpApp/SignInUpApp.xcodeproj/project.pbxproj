@@ -10,6 +10,7 @@
 		133F8EA22A9DB75B0023D030 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F8EA12A9DB75B0023D030 /* UserModel.swift */; };
 		13825B282AA4E117003000FF /* VerificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13825B272AA4E117003000FF /* VerificationsVC.swift */; };
 		1382CABC2A9D37A400512056 /* VerificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1382CABB2A9D37A400512056 /* VerificationService.swift */; };
+		138E7B672AA4FB4400F1BEF7 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138E7B662AA4FB4400F1BEF7 /* WelcomeVC.swift */; };
 		13993FDE2A9D2DA700E1D7C0 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13993FDD2A9D2DA700E1D7C0 /* UIViewControllerExt.swift */; };
 		13A3745A2A9D23FF004C1FCB /* CreateAccViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A374592A9D23FF004C1FCB /* CreateAccViewController.swift */; };
 		13BD8D1A2A96A19200E75AEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD8D192A96A19200E75AEC /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		133F8EA12A9DB75B0023D030 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		13825B272AA4E117003000FF /* VerificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationsVC.swift; sourceTree = "<group>"; };
 		1382CABB2A9D37A400512056 /* VerificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationService.swift; sourceTree = "<group>"; };
+		138E7B662AA4FB4400F1BEF7 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		13993FDD2A9D2DA700E1D7C0 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		13A374592A9D23FF004C1FCB /* CreateAccViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccViewController.swift; sourceTree = "<group>"; };
 		13BD8D162A96A19200E75AEC /* SignInUpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInUpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 				13BD8D342A96A89400E75AEC /* SignInVC.swift */,
 				13A374592A9D23FF004C1FCB /* CreateAccViewController.swift */,
 				13825B272AA4E117003000FF /* VerificationsVC.swift */,
+				138E7B662AA4FB4400F1BEF7 /* WelcomeVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				1382CABC2A9D37A400512056 /* VerificationService.swift in Sources */,
 				13BD8D1C2A96A19200E75AEC /* SceneDelegate.swift in Sources */,
 				13A3745A2A9D23FF004C1FCB /* CreateAccViewController.swift in Sources */,
+				138E7B672AA4FB4400F1BEF7 /* WelcomeVC.swift in Sources */,
 				13BD8D352A96A89400E75AEC /* SignInVC.swift in Sources */,
 				13825B282AA4E117003000FF /* VerificationsVC.swift in Sources */,
 			);

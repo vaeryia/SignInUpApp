@@ -12,6 +12,7 @@ class VerificationsVC: UIViewController {
     var  userModel: UserModel?
     
     let randomInt = Int.random(in: 100000 ... 999999)
+    var sleepTime = 3
     
     @IBOutlet weak var infoLbl: UILabel!
     @IBOutlet weak var codeTF: UITextField!
@@ -30,8 +31,20 @@ class VerificationsVC: UIViewController {
         errorCodeLbl.isHidden = true
         guard let text = sender.text, !text.isEmpty, text == randomInt.description else {
             errorCodeLbl.isHidden = false
+            sender.isUserInteractionEnabled = false
+            errorCodeLbl.text = "Error code. Please wait \(sleepTime) seconds"
+            let dispatchAfter = DispatchTimeInterval.seconds(sleepTime)
+            let deadline = DispatchTime.now() + dispatchAfter
+            DispatchQueue.main.asyncAfter(deadline: deadline) {
+                sender.isUserInteractionEnabled = true
+                self.errorCodeLbl.isHidden = true
+                self.sleepTime *= 2
+            }
+                                          
+                            
             return
         }
+        performSegue(withIdentifier: "goToWelcomeScreen", sender: nil)
     }
     
     private func startKeyboardObserver() {
@@ -55,14 +68,13 @@ class VerificationsVC: UIViewController {
         infoLbl.text = "Please enter your code '\(randomInt)' from \(userModel?.email ?? "")"
     }
 
-    /*
-    // MARK: - Navigation
+    //MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
+      override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+     {
+         guard let desinationVC = segue.destination as? WelcomeVC else { return }
+         desinationVC.userModel = userModel
+     }
 
 }

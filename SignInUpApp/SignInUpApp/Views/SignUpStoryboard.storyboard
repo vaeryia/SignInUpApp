@@ -166,7 +166,7 @@
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
-                                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxj-eE-09S">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxj-eE-09S">
                                                                 <rect key="frame" x="0.0" y="234.66666666666669" width="343" height="34.333333333333314"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Continue"/>
@@ -290,11 +290,64 @@
                         <outlet property="codeTF" destination="tMe-XE-odd" id="POb-B5-V1O"/>
                         <outlet property="errorCodeLbl" destination="eNQ-xp-PQ5" id="xiU-Uj-r2Q"/>
                         <outlet property="infoLbl" destination="JKc-4G-AC6" id="FK7-Rm-hei"/>
+                        <segue destination="nWy-33-noM" kind="show" identifier="goToWelcomeScreen" id="em7-iH-8zw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFq-ZE-EqG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="803.81679389312978" y="19.718309859154932"/>
+        </scene>
+        <!--WelcomeVC-->
+        <scene sceneID="Dcg-BB-CTF">
+            <objects>
+                <viewController id="nWy-33-noM" customClass="WelcomeVC" customModule="SignInUpApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6aS-R7-sIW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="rkw-dL-rvl">
+                                <rect key="frame" x="149.66666666666666" y="100" width="93.666666666666657" height="90.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIF-qh-USq">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6I-nq-aiV">
+                                        <rect key="frame" x="0.0" y="70" width="93.666666666666671" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmI-kw-b2L">
+                                <rect key="frame" x="150.33333333333334" y="757.66666666666663" width="92.666666666666657" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue"/>
+                                <connections>
+                                    <action selector="contAction" destination="nWy-33-noM" eventType="touchUpInside" id="2iQ-UQ-Ib2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aFi-7i-U1O"/>
+                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rkw-dL-rvl" firstAttribute="centerX" secondItem="aFi-7i-U1O" secondAttribute="centerX" id="H8J-xD-mkQ"/>
+                            <constraint firstItem="rkw-dL-rvl" firstAttribute="top" secondItem="aFi-7i-U1O" secondAttribute="top" constant="100" id="Ka5-2g-BVx"/>
+                            <constraint firstItem="aFi-7i-U1O" firstAttribute="bottom" secondItem="LmI-kw-b2L" secondAttribute="bottom" constant="50" id="ft2-o4-EgN"/>
+                            <constraint firstItem="LmI-kw-b2L" firstAttribute="centerX" secondItem="aFi-7i-U1O" secondAttribute="centerX" id="kfU-1K-mco"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4LM-l7-Dfn"/>
+                    <connections>
+                        <outlet property="infoLbl" destination="K6I-nq-aiV" id="ap9-jc-qXa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mID-10-oUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592" y="29"/>
         </scene>
     </scenes>
     <resources>
