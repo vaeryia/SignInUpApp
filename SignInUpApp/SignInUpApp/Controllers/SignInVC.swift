@@ -21,6 +21,9 @@ class SignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        if let _ = UserDefaultsService.getUserModel() {
+            goToTabBarController()
+        }
     }
     
     
@@ -42,15 +45,18 @@ class SignInVC: UIViewController {
             errorLbl.isHidden = false
             return }
         
-        let storyboard = UIStoryboard(name: "MainStoryboard", bundle: nil)
-        guard let vc = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else { return }
-        navigationController?.pushViewController(vc, animated: true)
+        goToTabBarController()
     }
     
     private func setupUI() {
 //        signinBtn.isEnabled = false
     }
     
+    private func goToTabBarController() {
+        let storyboard = UIStoryboard(name: "MainStoryboard", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else { return }
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension SignInVC {
